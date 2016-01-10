@@ -22,7 +22,7 @@ To create an Array with CLLocations you could use such a code snippet in your Ap
     
     NSMutableArray *coordinates = [[NSMutableArray alloc]init];
     
-    for (int i = 2; i < polylineElements.count; i+=2) {
+    for (int i = 2; i <= polylineElements.count; i+=2) {
         
         NSNumber *lat = polylineElements[i-2];
         NSNumber *lon = polylineElements[i-1];
